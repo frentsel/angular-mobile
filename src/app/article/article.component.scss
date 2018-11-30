@@ -4,33 +4,22 @@
   padding: 10px;
   background: white;
   margin-bottom: 16px;
+  margin-top: 10px;
 
   .headline {
     display: flex;
     justify-content: space-between;
-  }
 
-  .icon {
-    background: #0e2bc5;
-    width: 30px;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
-    min-width: 30px;
-    margin-right: 10px;
-    border-radius: 4px;
-    display: flex;
-    color: white;
   }
 
   .text {
-    margin: 5px 0 10px;
-    border-top: 1px solid #bfbfbf;
-    padding-top: 10px;
-    color: gray;
     font-weight: 200;
-    font-size: 11px;
-    line-height: 16px;
+    margin: 10px 0 13px;
+    border-top: 1px solid #bfbfbf;
+    padding-top: 5px;
+    color: grey;
+    font-size: 12px;
+    line-height: 14px;
   }
 
   button {
