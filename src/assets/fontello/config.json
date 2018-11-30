@@ -1,0 +1,40 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "b52aa05c9c55c41f1768cdaa940401a8",
+      "css": "comment",
+      "code": 59392,
+      "src": "websymbols"
+    },
+    {
+      "uid": "acf41aa4018e58d49525665469e35665",
+      "css": "like",
+      "code": 59394,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "7222571caa5c15f83dcfd447c58d68d9",
+      "css": "search",
+      "code": 59395,
+      "src": "entypo"
+    },
+    {
+      "uid": "4b2321afcbe0505a70b80abd5c25e09b",
+      "css": "paper-plane-empty",
+      "code": 61913,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "fc92480dedc439d274d4e3e4b425edf4",
+      "css": "smile",
+      "code": 59409,
+      "src": "fontelico"
+    }
+  ]
+}

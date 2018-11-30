@@ -28,7 +28,7 @@ export class AppComponent {
         },
         {
           author: 'Not Me',
-          text: 'Ipsam aliquid quis temporibus!',
+          text: 'Reprehenderit dolores quae voluptatum quod exercitationem cumque excepturi omnis esse deleniti, est adipisci illum eveniet odio asperiores.',
         }
       ],
     }

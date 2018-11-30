@@ -1,14 +1,20 @@
 <div class="article">
   <div class="headline">
-    <icon>icon</icon>
-    <div class="author">{{entry?.author}}</div>
-    <div class="date">{{entry?.date | date:'mm:ss'}}</div>
-    <button>follow</button>
+    <icon key="smile"></icon>
+    <div class="info">
+      <div class="author">{{entry?.author}}</div>
+      <div class="date">{{entry?.date | date:'mm:ss'}}</div>
+    </div>
+    <button class="btn-light">Follow</button>
   </div>
   <div class="text">{{entry?.text}}</div>
   <div class="manage">
-    <button (click)="like()">Likes {{entry?.likes?.length}}</button>
-    <button (click)="activateComments()">Comments {{entry?.comments?.length}}</button>
+    <button (click)="like()" class="like">
+      <span class="icon-like"></span>{{entry?.likes?.length}}
+    </button>
+    <button (click)="activateComments()" class="comments">
+      <span class="icon-comment"></span>Comments {{entry?.comments?.length}}
+    </button>
   </div>
 </div>
 <comments [entry]="entry" *ngIf="commentsActive"></comments>

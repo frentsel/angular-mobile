@@ -1,3 +1,5 @@
+@import '../../../assets/fontello/css/fontello.css';
+
 :host {
   width: 27px;
   min-width: 27px;
@@ -10,4 +12,16 @@
   background: #0e2cc4;
   background: linear-gradient(to right, #0e2cc4 0%, #0771b8 100%);
   font-size: 10px;
+
+  span {
+    font-family: 'fontello';
+    &.icon-smile {
+      border: 1px solid white;
+      border-radius: 50%;
+      width: 17px;
+      height: 17px;
+      font-size: 11px;
+      text-align: center;
+    }
+  }
 }

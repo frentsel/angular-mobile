@@ -1,15 +1,27 @@
+@import '../../assets/fontello/css/fontello.css';
+
 .article {
   border-radius: 4px;
   background: white;
   padding: 10px;
   background: white;
-  margin-bottom: 16px;
+  margin-bottom: 5px;
   margin-top: 10px;
 
   .headline {
     display: flex;
     justify-content: space-between;
 
+  }
+
+  .info {
+    flex-grow: 1;
+    margin-left: 5px;
+    color: #707070;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .text {
@@ -22,13 +34,45 @@
     line-height: 14px;
   }
 
+  .date {
+    font-size: 8px;
+  }
+
+  .manage {
+    display: flex;
+  }
+
   button {
-    border: 0;
+    border: 1px solid transparent;
     padding: 0 23px;
     border-radius: 4px;
     background: #58bcff;
     color: white;
     font-size: 12px;
     min-height: 26px;
+    font-weight: 200;
+
+    &.like {
+      padding: 0 5px 0 0;
+      font-size: 12px;
+      margin-right: 5px;
+      display: flex;
+      align-items: center;
+
+      > span {
+        font-size: 17px;
+      }
+    }
+
+    &.comments {
+      padding: 0 3px;
+    }
+
+    &.btn-light {
+      border-color: #52bbff;
+      background: transparent;
+      color: #58bcff;
+      padding: 0 12px;
+    }
   }
 }
