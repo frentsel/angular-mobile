@@ -1,0 +1,14 @@
+<div class="article">
+  <div class="headline">
+    <div class="icon">icon</div>
+    <div class="author">{{entry?.author}}</div>
+    <div class="date">{{entry?.date | date:'mm:ss'}}</div>
+    <button>follow</button>
+  </div>
+  <div class="text">{{entry?.text}}</div>
+  <div class="manage">
+    <button (click)="like()">Likes {{entry?.likes?.length}}</button>
+    <button (click)="activateComments()">Comments {{entry?.comments?.length}}</button>
+  </div>
+</div>
+<comments [entry]="entry" *ngIf="commentsActive"></comments>

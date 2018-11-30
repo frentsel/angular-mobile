@@ -1,0 +1,45 @@
+.article {
+  border-radius: 4px;
+  background: white;
+  padding: 10px;
+  background: white;
+  margin-bottom: 16px;
+
+  .headline {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .icon {
+    background: #0e2bc5;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    min-width: 30px;
+    margin-right: 10px;
+    border-radius: 4px;
+    display: flex;
+    color: white;
+  }
+
+  .text {
+    margin: 5px 0 10px;
+    border-top: 1px solid #bfbfbf;
+    padding-top: 10px;
+    color: gray;
+    font-weight: 200;
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  button {
+    border: 0;
+    padding: 0 23px;
+    border-radius: 4px;
+    background: #58bcff;
+    color: white;
+    font-size: 12px;
+    min-height: 26px;
+  }
+}

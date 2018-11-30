@@ -1,0 +1,3 @@
+<textarea [(ngModel)]="text"></textarea>
+<button (click)="send()">Send</button>
+<comment *ngFor="let comment of entry.comments">{{comment.text}}</comment>
