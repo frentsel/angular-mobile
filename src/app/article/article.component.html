@@ -13,7 +13,7 @@
       <span class="icon-like"></span>{{entry?.likes?.length}}
     </button>
     <button (click)="activateComments()" class="comments">
-      <span class="icon-comment"></span>Comments {{entry?.comments?.length}}
+      <span class="icon-comment"></span>Comments<span *ngIf="entry?.comments?.length"> - {{entry?.comments?.length}}</span>
     </button>
   </div>
 </div>

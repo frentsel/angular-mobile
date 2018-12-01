@@ -40,6 +40,7 @@ export class AppComponent {
     private _likes: LikesService,
     private _search: SearchService,
   ) {
+    this._entries = [...this.entries];
     this._articles.getValue().subscribe(this.applyArticles.bind(this));
     this._comments.getValue().subscribe(this.applyComments.bind(this));
     this._search.getValue().subscribe(this.applySearch.bind(this));
@@ -47,11 +48,10 @@ export class AppComponent {
   }
 
   ngAfterViewInit() {
-    // this._author = prompt("Please enter your name", this._author);
+    // this._author = prompt('Please enter your name', this._author);
   }
 
   applyArticles(entry) {
-    this._entries = [...this.entries];
     entry.author = this._author;
     this.entries.unshift(entry as any);
     this.entries = [...this.entries];
