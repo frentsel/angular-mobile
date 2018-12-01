@@ -41,5 +41,13 @@
     font-size: 12px;
     min-height: 26px;
     font-weight: 200;
+
+    &:hover{
+      background: darken(#58bcff, 3%) ;
+    }
+
+    &:active{
+      background: lighten(#58bcff, 3%) ;
+    }
   }
 }

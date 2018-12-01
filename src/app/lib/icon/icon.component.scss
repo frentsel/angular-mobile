@@ -18,10 +18,12 @@
     &.icon-smile {
       border: 1px solid white;
       border-radius: 50%;
-      width: 17px;
+      width: 18px;
       height: 17px;
       font-size: 11px;
       text-align: center;
+      display: flex;
+      align-items: center;
     }
   }
 }
