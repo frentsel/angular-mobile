@@ -11,7 +11,7 @@ export class ArticleComponent {
 
   commentsActive = false;
 
-  @Input() entry;
+  @Input() entry = null;
 
   constructor(private _state: StateService) { }
 

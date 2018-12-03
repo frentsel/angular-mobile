@@ -1,5 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { CommentComponent } from './comment.component';
+import { IconModule } from '../../lib/icon/icon.module';
 
 describe('CommentComponent', () => {
   let component: CommentComponent;
@@ -7,6 +8,9 @@ describe('CommentComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [
+        IconModule
+      ],
       declarations: [ CommentComponent ]
     })
     .compileComponents();

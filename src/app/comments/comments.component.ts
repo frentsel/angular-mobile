@@ -10,11 +10,14 @@ export class CommentsComponent {
 
   text: string = null;
 
-  @Input() entry;
+  @Input() entry = {
+    comments: [],
+    author: null
+  };
 
   constructor(private _state: StateService) { }
 
-  send() {
+  send():void {
     if (!this.text) {
       return;
     }
