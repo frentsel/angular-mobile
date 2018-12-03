@@ -2,7 +2,8 @@ import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { SearchModule } from './search/search.module';
 import { PostFormModule } from './post-form/post-form.module';
-fdescribe('AppComponent', () => {
+
+describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
