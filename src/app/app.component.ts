@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
-import { ArticlesService } from './services/articles.service';
-import { SearchService } from './services/search.service';
-import { CommentsService } from './services/comments.service';
-import { LikesService } from './services/likes.service';
+import { StateService } from './services/state.service';
 import * as _ from 'lodash';
 
 @Component({
@@ -35,16 +32,13 @@ export class AppComponent {
   ];
 
   constructor(
-    private _articles: ArticlesService,
-    private _comments: CommentsService,
-    private _likes: LikesService,
-    private _search: SearchService,
+    private _state: StateService
   ) {
     this._entries = [...this.entries];
-    this._articles.getValue().subscribe(this.applyArticles.bind(this));
-    this._comments.getValue().subscribe(this.applyComments.bind(this));
-    this._search.getValue().subscribe(this.applySearch.bind(this));
-    this._likes.getValue().subscribe(this.applyLikes.bind(this));
+    this._state.getValue('article').subscribe(this.applyArticles.bind(this));
+    this._state.getValue('search').subscribe(this.applySearch.bind(this));
+    this._state.getValue('comment').subscribe(this.applyComments.bind(this));
+    this._state.getValue('like').subscribe(this.applyLikes.bind(this));
   }
 
   ngAfterViewInit() {

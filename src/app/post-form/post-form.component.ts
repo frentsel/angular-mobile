@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ArticlesService } from '../services/articles.service';
 import * as _ from 'lodash';
+import { StateService } from '../services/state.service';
 
 @Component({
   selector: 'post-form',
@@ -11,13 +11,13 @@ export class PostFormComponent {
 
   text: string = null;
 
-  constructor(private _service: ArticlesService) { }
+  constructor(private _state: StateService) { }
 
   post(): void {
     if (!this.text) {
       return;
     }
-    this._service.setValue({
+    this._state.setValue('article', {
       entryId: _.uniqueId(),
       text: this.text,
       date: _.now(),

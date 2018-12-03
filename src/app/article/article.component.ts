@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { LikesService } from '../services/likes.service';
+import { StateService } from '../services/state.service';
 import * as _ from 'lodash';
 
 @Component({
@@ -13,13 +13,13 @@ export class ArticleComponent {
 
   @Input() entry;
 
-  constructor(private _service: LikesService) { }
+  constructor(private _state: StateService) { }
 
   activateComments() {
     this.commentsActive = !this.commentsActive;
   }
 
   like() {
-    this._service.setValue(this.entry);
+    this._state.setValue('like', this.entry);
   }
 }

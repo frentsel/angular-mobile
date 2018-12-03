@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SearchService } from '../services/search.service';
+import { StateService } from '../services/state.service';
 
 @Component({
   selector: 'search',
@@ -10,10 +10,10 @@ export class SearchComponent {
 
   find: string = null;
 
-  constructor(private _service: SearchService) {
+  constructor(private _state: StateService) {
   }
 
   change(str) {
-    this._service.setValue(str);
+    this._state.setValue('search', str);
   }
 }

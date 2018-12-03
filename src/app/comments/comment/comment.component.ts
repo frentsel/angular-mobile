@@ -5,6 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './comment.component.html',
   styleUrls: ['./comment.component.scss']
 })
-export class CommentComponent {
-
-}
+export class CommentComponent { }

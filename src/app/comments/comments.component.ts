@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { CommentsService } from '../services/comments.service';
+import { StateService } from '../services/state.service';
 
 @Component({
   selector: 'comments',
@@ -12,13 +12,13 @@ export class CommentsComponent {
 
   @Input() entry;
 
-  constructor(private _service: CommentsService) { }
+  constructor(private _state: StateService) { }
 
   send() {
     if (!this.text) {
       return;
     }
-    this._service.setValue({
+    this._state.setValue('comment', {
       author: this.entry.author,
       text: this.text,
     });

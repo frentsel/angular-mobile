@@ -5,5 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './icon.component.html',
   styleUrls: ['./icon.component.scss']
 })
-export class IconComponent {
-}
+export class IconComponent { }
