@@ -1,6 +1,7 @@
 :host {
   margin: 0 auto;
-  width: 375px;
+  min-width: 240px;
+  max-width: 568px;
   background: #f5f6fa;
   min-height: 100%;
   display: flex;

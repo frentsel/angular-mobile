@@ -1,6 +1,8 @@
 # Hexad
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
+Test angular 6 application.
+
+## [Demo App](https://frentsel.github.io/angular-mobile/hexad/index.html)
 
 ## Development server
 
