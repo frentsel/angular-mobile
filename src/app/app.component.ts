@@ -48,8 +48,7 @@ export class AppComponent {
   applyArticles(entry) {
     entry.author = this._author;
     this.entries.unshift(entry as any);
-    this.entries = [...this.entries];
-    this._entries = [...this.entries];
+    this._applyEnty();
   }
 
   applyComments({ author, text }: any) {
@@ -59,14 +58,18 @@ export class AppComponent {
       }
     });
 
-    this.entries = [...this.entries];
-    this._entries = [...this.entries];
+    this._applyEnty();
   }
 
   applySearch(str) {
     this.entries = this._entries.filter((el) => {
       return el.text.indexOf(str) > -1;
     });
+  }
+
+  private _applyEnty() {
+    this.entries = [...this.entries];
+    this._entries = [...this.entries];
   }
 
   applyLikes(like) {
